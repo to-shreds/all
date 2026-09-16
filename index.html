@@ -1,1 +1,157 @@
-<html><head><title>My Master Directory</title></head><body><h1>All HTML Files</h1><h2>all</h2><ul><li><a href='https://jonathanjablon-stack.github.io/all/index.html'>index.html</a></li></ul><h2>arcade</h2><ul><li><a href='https://jonathanjablon-stack.github.io/arcade/Make10.html'>Make10.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/balloons.html'>balloons.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/blackjack.html'>blackjack.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/checkers.html'>checkers.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/chess.html'>chess.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/clock.html'>clock.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/dots.html'>dots.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/hangman.html'>hangman.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/index.html'>index.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/index_editor.html'>index_editor.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/insultinator.html'>insultinator.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/jigsaw.html'>jigsaw.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/math.html'>math.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/maze.html'>maze.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/memory.html'>memory.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/meta/IndexEditor.html'>meta/IndexEditor.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/minesweeper.html'>minesweeper.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/minigolf.html'>minigolf.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/orbslicer.html'>orbslicer.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/paintlab.html'>paintlab.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/patterns.html'>patterns.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/qix.html'>qix.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/shuffleboard.html'>shuffleboard.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/simon.html'>simon.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/tictactoe.html'>tictactoe.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/trail.html'>trail.html</a></li><li><a href='https://jonathanjablon-stack.github.io/arcade/trivia.html'>trivia.html</a></li></ul><h2>Comment-extractor</h2><ul><li><a href='https://jonathanjablon-stack.github.io/Comment-extractor/index.html'>index.html</a></li></ul><h2>media-tools</h2><ul><li><a href='https://jonathanjablon-stack.github.io/media-tools/CommentEditor.html'>CommentEditor.html</a></li><li><a href='https://jonathanjablon-stack.github.io/media-tools/HyperSearch.html'>HyperSearch.html</a></li><li><a href='https://jonathanjablon-stack.github.io/media-tools/ZipTools.html'>ZipTools.html</a></li><li><a href='https://jonathanjablon-stack.github.io/media-tools/index.html'>index.html</a></li></ul><h2>NQTL</h2><ul><li><a href='https://jonathanjablon-stack.github.io/NQTL/index.html'>index.html</a></li></ul><h2>Policy-review</h2><ul><li><a href='https://jonathanjablon-stack.github.io/Policy-review/PA15.3b.html'>PA15.3b.html</a></li><li><a href='https://jonathanjablon-stack.github.io/Policy-review/redirect.html'>redirect.html</a></li></ul><h2>testPACE_Directive</h2><ul><li><a href='https://jonathanjablon-stack.github.io/testPACE_Directive/index.html'>index.html</a></li></ul></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Jon's Apps</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: rgba(18, 26, 49, .84);
+      --panel2: rgba(27, 38, 68, .9);
+      --text: #f5f7ff;
+      --muted: #aeb8d4;
+      --line: rgba(255,255,255,.09);
+      --accent: #79a8ff;
+      --accent2: #9f8cff;
+      --shadow: 0 18px 50px rgba(0,0,0,.25);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 0%, rgba(74, 110, 255, .18), transparent 30rem),
+        radial-gradient(circle at 90% 10%, rgba(160, 102, 255, .14), transparent 28rem),
+        var(--bg);
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, calc(100% - 28px)); margin: 0 auto; padding: 42px 0 60px; }
+    header { display: flex; gap: 18px; align-items: flex-end; justify-content: space-between; margin-bottom: 26px; }
+    .eyebrow { color: var(--accent); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 6px 0 6px; font-size: clamp(2rem, 7vw, 4.5rem); line-height: .95; letter-spacing: -.055em; }
+    .sub { color: var(--muted); max-width: 650px; margin: 0; line-height: 1.5; }
+    .controls { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 24px; }
+    .search {
+      flex: 1 1 320px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.05);
+      color: var(--text); padding: 13px 15px; font: inherit; outline: none;
+    }
+    .search:focus { border-color: rgba(121,168,255,.7); box-shadow: 0 0 0 3px rgba(121,168,255,.12); }
+    .refresh {
+      border: 1px solid var(--line); border-radius: 16px; padding: 12px 15px; background: rgba(255,255,255,.06);
+      color: var(--text); font: inherit; font-weight: 700; cursor: pointer;
+    }
+    .refresh:hover { background: rgba(255,255,255,.1); }
+    .status { color: var(--muted); font-size: .92rem; margin: -8px 0 16px; min-height: 1.4em; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .card {
+      display: flex; flex-direction: column; min-height: 190px; padding: 20px; border-radius: 21px;
+      border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel2), var(--panel));
+      box-shadow: var(--shadow); text-decoration: none; transition: transform .16s ease, border-color .16s ease, background .16s ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: rgba(121,168,255,.45); background: linear-gradient(160deg, rgba(34,47,83,.95), rgba(21,31,58,.93)); }
+    .icon {
+      display: grid; place-items: center; width: 42px; height: 42px; border-radius: 13px; margin-bottom: 20px;
+      background: linear-gradient(135deg, rgba(121,168,255,.22), rgba(159,140,255,.22)); font-size: 1.15rem; font-weight: 900;
+    }
+    .name { font-size: 1.1rem; font-weight: 850; margin-bottom: 7px; overflow-wrap: anywhere; }
+    .desc { color: var(--muted); line-height: 1.42; font-size: .9rem; flex: 1; }
+    .go { margin-top: 18px; color: var(--accent); font-weight: 800; font-size: .88rem; }
+    .empty { grid-column: 1 / -1; border: 1px dashed var(--line); border-radius: 18px; padding: 32px; color: var(--muted); text-align: center; }
+    footer { color: #77829f; font-size: .8rem; text-align: center; margin-top: 34px; }
+    @media (max-width: 640px) {
+      .wrap { padding-top: 28px; }
+      header { align-items: flex-start; flex-direction: column; }
+      .card { min-height: 165px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <div class="eyebrow">GitHub Pages launcher</div>
+        <h1>Jon's Apps</h1>
+        <p class="sub">A live menu of public GitHub Pages projects. New Pages-enabled repositories appear here automatically.</p>
+      </div>
+    </header>
+
+    <div class="controls">
+      <input id="search" class="search" type="search" placeholder="Search apps…" autocomplete="off" />
+      <button id="refresh" class="refresh" type="button">Refresh</button>
+    </div>
+    <div id="status" class="status">Loading GitHub Pages…</div>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <footer>Powered by GitHub's public API</footer>
+  </main>
+
+  <script>
+    const USER = 'to-shreds';
+    const API = `https://api.github.com/users/${USER}/repos?per_page=100&sort=updated&type=owner`;
+    const grid = document.getElementById('grid');
+    const status = document.getElementById('status');
+    const search = document.getElementById('search');
+    const refresh = document.getElementById('refresh');
+    let pagesRepos = [];
+
+    function prettyName(name) {
+      return name.replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function pageUrl(repo) {
+      if (repo.homepage && /^https?:\/\//i.test(repo.homepage)) return repo.homepage;
+      return `https://${USER}.github.io/${repo.name}/`;
+    }
+
+    function render() {
+      const q = search.value.trim().toLowerCase();
+      const shown = pagesRepos.filter(r => {
+        const haystack = `${r.name} ${r.description || ''}`.toLowerCase();
+        return !q || haystack.includes(q);
+      });
+
+      status.textContent = pagesRepos.length
+        ? `${shown.length} of ${pagesRepos.length} Pages project${pagesRepos.length === 1 ? '' : 's'}`
+        : 'No Pages-enabled public repositories found.';
+
+      if (!shown.length) {
+        grid.innerHTML = `<div class="empty">${q ? 'No matching apps.' : 'Nothing to show yet.'}</div>`;
+        return;
+      }
+
+      grid.innerHTML = shown.map(repo => `
+        <a class="card" href="${pageUrl(repo)}" target="_self" rel="noopener">
+          <div class="icon">${prettyName(repo.name).charAt(0)}</div>
+          <div class="name">${prettyName(repo.name)}</div>
+          <div class="desc">${repo.description || 'Open this GitHub Pages project.'}</div>
+          <div class="go">Open →</div>
+        </a>
+      `).join('');
+    }
+
+    async function load() {
+      status.textContent = 'Loading GitHub Pages…';
+      grid.innerHTML = '';
+      try {
+        const res = await fetch(API, { headers: { 'Accept': 'application/vnd.github+json' } });
+        if (!res.ok) throw new Error(`GitHub API returned ${res.status}`);
+        const repos = await res.json();
+        pagesRepos = repos
+          .filter(r => !r.fork && !r.archived && r.visibility === 'public' && r.has_pages)
+          .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        render();
+      } catch (err) {
+        console.error(err);
+        status.textContent = 'Could not load GitHub Pages right now.';
+        grid.innerHTML = `<div class="empty">GitHub could not be reached. Try Refresh.</div>`;
+      }
+    }
+
+    search.addEventListener('input', render);
+    refresh.addEventListener('click', load);
+    load();
+  </script>
+</body>
+</html>
